@@ -1,10 +1,3 @@
-# --------------------------------------------------------------
-# Project Title : Daily Calorie Tracker
-# Author        : Dr. Ayush
-# Date          : 07 Oct 2025
-# Description   : A simple console app to record daily meals and
-#                 track total & average calories consumed.
-# --------------------------------------------------------------
 
 # Task 1 : Welcome message
 print("------------------------------------------------------")
