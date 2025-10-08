@@ -25,9 +25,9 @@ daily_limit = float(input("\nEnter your daily calorie limit: "))
 
 # Task 4 : Exceed Limit Warning System
 if total_calories > daily_limit:
-    status = "⚠️ You have exceeded your daily calorie limit!"
+    status = "You have exceeded your daily calorie limit!"
 else:
-    status = "✅ You are within your daily calorie limit. Good job!"
+    status = "You are within your daily calorie limit. Good job!"
 
 # Task 5 : Neatly Formatted Output
 print("\n\n----------- Daily Calorie Summary -----------")
@@ -53,15 +53,15 @@ if save_option == "yes":
     filename = f"calorie_log_{now.strftime('%Y%m%d_%H%M%S')}.txt"
 
     with open(filename, "w") as file:
-        file.write("------ Daily Calorie Tracker Report ------\n")
+        file.write("------ Daily Calorie Tracker Report ------")
         file.write(f"Date & Time: {now}\n\n")
         for i in range(len(meals)):
             file.write(f"{meals[i]:15}\t{calories[i]}\n")
-        file.write("--------------------------------------------\n")
+        file.write("--------------------------------------------")
         file.write(f"Total Calories: {total_calories}\n")
         file.write(f"Average Calories: {average_calories:.2f}\n")
         file.write(status + "\n")
-        file.write("--------------------------------------------\n")
+        file.write("--------------------------------------------")
 
     print(f"\nReport saved successfully as '{filename}'!")
 else:
